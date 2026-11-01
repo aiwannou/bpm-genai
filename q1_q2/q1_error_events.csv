@@ -1,0 +1,30 @@
+event_no,CaseID,Activity,Timestamp,Error
+18,Case_4,Approve Claim,2026-09-04T12:27:00,E4 out of order
+19,Case_4,Evaluate Claim,2026-09-04T14:22:00,E4 out of order
+24,Case_5,Approve Claim,2026-09-05T13:55:00,E3 negative duration
+29,Case_6,Approve Claim,2026-09-06T11:32:00,E3 negative duration
+63,Case_13,Evaluate Claim,2026-09-13T16,E2 malformed
+73,Case_15,Approve Claim,2026-09-15T13:27:00,E4 out of order
+74,Case_15,Evaluate Claim,2026-09-15T14:28:00,E4 out of order
+77,Case_16,Verify Documents,2026-09-16T12,E2 malformed
+96,Case_20,Register Claim,2026-09-20T10,E2 malformed
+137,Case_28,Verify Documents,,E1 missing
+143,Case_29,Approve Claim,2026-09-29T11:35:00,E4 out of order
+144,Case_29,Evaluate Claim,2026-09-29T13:30:00,E4 out of order
+154,Case_31,Approve Claim,2026-10-01T13:03:00,E3 negative duration
+158,Case_32,Approve Claim,2026-10-02T13:31:00,E4 out of order
+159,Case_32,Evaluate Claim,2026-10-02T15:14:00,E4 out of order
+168,Case_34,Evaluate Claim,,E1 missing
+178,Case_36,Approve Claim,2026-10-06T13:07:00,E4 out of order
+179,Case_36,Evaluate Claim,2026-10-06T14:16:00,E4 out of order
+299,Case_60,Approve Claim,2026-10-30T15:36:00,E3 negative duration
+348,Case_70,Evaluate Claim,,E1 missing
+375,Case_75,Close Claim,2026-11-14T16,E2 malformed
+381,Case_77,Register Claim,,E1 missing
+404,Case_81,Approve Claim,2026-11-20T13:18:00,E3 negative duration
+408,Case_82,Approve Claim,2026-11-21T14:08:00,E4 out of order
+409,Case_82,Evaluate Claim,2026-11-21T15:23:00,E4 out of order
+418,Case_84,Evaluate Claim,,E1 missing
+465,Case_93,Close Claim,2026-12-02T15,E2 malformed
+473,Case_95,Approve Claim,2026-12-04T12:48:00,E4 out of order
+474,Case_95,Evaluate Claim,2026-12-04T14:25:00,E4 out of order

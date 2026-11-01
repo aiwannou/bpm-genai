@@ -1,0 +1,95 @@
+==============================================================================
+DATASET
+==============================================================================
+File: insurance_claims_log.csv
+Events: 500 | Cases: 100 | Activities: 5 | Users: 5
+Period: 2026-09-01 12:53:00 -> 2026-12-09 18:27:00
+==============================================================================
+VARIANTS (sequence of activities in file order)
+==============================================================================
+   93 cases : Register Claim -> Verify Documents -> Evaluate Claim -> Approve Claim -> Close Claim
+    7 cases : Register Claim -> Verify Documents -> Approve Claim -> Evaluate Claim -> Close Claim
+The most frequent variant is used as the expected (normal) process:
+  Register Claim -> Verify Documents -> Evaluate Claim -> Approve Claim -> Close Claim
+==============================================================================
+E1 - MISSING TIMESTAMPS (5 events)
+==============================================================================
+  Case_28  Verify Documents  event #137  previous: 2026-09-28 09:35:00  next: 2026-09-28 12:07:00
+  Case_34  Evaluate Claim    event #168  previous: 2026-10-04 14:21:00  next: 2026-10-04 17:02:00
+  Case_70  Evaluate Claim    event #348  previous: 2026-11-09 12:40:00  next: 2026-11-09 14:46:00
+  Case_77  Register Claim    event #381  previous: None  next: 2026-11-16 12:47:00
+  Case_84  Evaluate Claim    event #418  previous: 2026-11-23 12:31:00  next: 2026-11-23 14:56:00
+==============================================================================
+E2 - MALFORMED TIMESTAMPS (5 events)
+==============================================================================
+  Case_13  Evaluate Claim    event #63   value='2026-09-13T16'  read as 16:00:00 -> fits between 2026-09-13 14:07:00 and 2026-09-13 17:36:00
+  Case_16  Verify Documents  event #77   value='2026-09-16T12'  read as 12:00:00 -> fits between 2026-09-16 10:54:00 and 2026-09-16 12:54:00
+  Case_20  Register Claim    event #96   value='2026-09-20T10'  read as 10:00:00 -> fits between None and 2026-09-20 12:08:00
+  Case_75  Close Claim       event #375  value='2026-11-14T16'  read as 16:00:00 -> fits between 2026-11-14 14:35:00 and None
+  Case_93  Close Claim       event #465  value='2026-12-02T15'  read as 15:00:00 -> fits between 2026-12-02 14:14:00 and None
+==============================================================================
+E3 - NEGATIVE DURATIONS (5 transitions)
+==============================================================================
+  Case_5   Evaluate Claim (2026-09-05 14:10:00) -> Approve Claim (2026-09-05 13:55:00) = -15 min   | Approve Claim -> Close = 250 min
+  Case_6   Evaluate Claim (2026-09-06 11:47:00) -> Approve Claim (2026-09-06 11:32:00) = -15 min   | Approve Claim -> Close = 178 min
+  Case_31  Evaluate Claim (2026-10-01 13:18:00) -> Approve Claim (2026-10-01 13:03:00) = -15 min   | Approve Claim -> Close = 163 min
+  Case_60  Evaluate Claim (2026-10-30 15:51:00) -> Approve Claim (2026-10-30 15:36:00) = -15 min   | Approve Claim -> Close = 222 min
+  Case_81  Evaluate Claim (2026-11-20 13:33:00) -> Approve Claim (2026-11-20 13:18:00) = -15 min   | Approve Claim -> Close = 160 min
+  Every normal step in this log takes 30-120 min. Here the step into
+  Evaluate is normal, but Approve -> Close is 160-250 min: the Approve
+  timestamp was moved back. So the WRONG value is the Approve timestamp.
+==============================================================================
+E4 - OUT-OF-ORDER ACTIVITIES (7 cases)
+==============================================================================
+  Case_4   Register Claim -> Verify Documents -> Approve Claim -> Evaluate Claim -> Close Claim   (Approve recorded 115 min before Evaluate)
+  Case_15  Register Claim -> Verify Documents -> Approve Claim -> Evaluate Claim -> Close Claim   (Approve recorded 61 min before Evaluate)
+  Case_29  Register Claim -> Verify Documents -> Approve Claim -> Evaluate Claim -> Close Claim   (Approve recorded 115 min before Evaluate)
+  Case_32  Register Claim -> Verify Documents -> Approve Claim -> Evaluate Claim -> Close Claim   (Approve recorded 103 min before Evaluate)
+  Case_36  Register Claim -> Verify Documents -> Approve Claim -> Evaluate Claim -> Close Claim   (Approve recorded 69 min before Evaluate)
+  Case_82  Register Claim -> Verify Documents -> Approve Claim -> Evaluate Claim -> Close Claim   (Approve recorded 75 min before Evaluate)
+  Case_95  Register Claim -> Verify Documents -> Approve Claim -> Evaluate Claim -> Close Claim   (Approve recorded 97 min before Evaluate)
+==============================================================================
+EXTRA CHECKS (generic, not tied to a known error)
+==============================================================================
+  C1 duplicate timestamps inside a case : 0 events
+  C2 extreme duration outliers (IQR x3): 1 transitions
+CaseID                   Transition  Minutes  event_no
+Case_5 Approve Claim -> Close Claim    250.0        25
+  C3 cases spanning more than one day   : 0
+  C4 dates outside the log period       : 0 events
+  Duration statistics per transition (valid, forward pairs only, minutes):
+                                    count   min   50%    max
+Transition                                                  
+Approve Claim -> Close Claim         91.0  30.0  72.0  250.0
+Approve Claim -> Evaluate Claim       7.0  61.0  97.0  115.0
+Evaluate Claim -> Approve Claim      84.0  32.0  71.0  119.0
+Evaluate Claim -> Close Claim         7.0  35.0  55.0  117.0
+Register Claim -> Verify Documents   96.0  31.0  74.0  119.0
+Verify Documents -> Approve Claim     7.0  41.0  72.0  103.0
+Verify Documents -> Evaluate Claim   87.0  30.0  80.0  120.0
+==============================================================================
+SUMMARY
+==============================================================================
+                               Error type  Count                                                        Cases
+                     E1 Missing timestamp      5                  Case_28, Case_34, Case_70, Case_77, Case_84
+                   E2 Malformed timestamp      5                  Case_13, Case_16, Case_20, Case_75, Case_93
+E3 Negative duration (Approve < Evaluate)      5                    Case_5, Case_6, Case_31, Case_60, Case_81
+E4 Out-of-order (Approve before Evaluate)      7 Case_4, Case_15, Case_29, Case_32, Case_36, Case_82, Case_95
+                  C1 Duplicate timestamps      0                                                             
+                     C2 Duration outliers      1                                                             
+                       C3 Multi-day cases      0                                                             
+                    C4 Out-of-range dates      0                                                             
+Cases with at least one error: 22 / 100
+Clean cases: 78
+Saved: q1_summary.csv  and  q1_error_events.csv (29 events)
+==============================================================================
+PM4PY CHECK - variants after sorting by timestamp
+==============================================================================
+Events with a valid timestamp: 490 (left out: 10)
+   78 cases : Register Claim -> Verify Documents -> Evaluate Claim -> Approve Claim -> Close Claim
+   12 cases : Register Claim -> Verify Documents -> Approve Claim -> Evaluate Claim -> Close Claim
+    4 cases : Register Claim -> Verify Documents -> Approve Claim -> Close Claim
+    2 cases : Register Claim -> Evaluate Claim -> Approve Claim -> Close Claim
+    2 cases : Verify Documents -> Evaluate Claim -> Approve Claim -> Close Claim
+    2 cases : Register Claim -> Verify Documents -> Evaluate Claim -> Approve Claim
+Note: after sorting by time, E3 and E4 cases look the same (Approve before Evaluate), and E1/E2 cases lose one activity.

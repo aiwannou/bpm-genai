@@ -1,0 +1,9 @@
+Error type,Count,Cases,Explanation
+E1 Missing timestamp,5,"Case_28, Case_34, Case_70, Case_77, Case_84","Timestamp is empty: the event cannot be placed in time, durations around it cannot be computed. PM4PY drops it, so the trace loses an activity."
+E2 Malformed timestamp,5,"Case_13, Case_16, Case_20, Case_75, Case_93","Minutes and seconds are cut (e.g. 2026-09-13T16). A strict parser rejects it; pm4py.read_xes silently reads it as HH:00:00, so the true minute is lost."
+E3 Negative duration (Approve < Evaluate),5,"Case_5, Case_6, Case_31, Case_60, Case_81","Rows are in the correct order, but Approve Claim has a timestamp exactly 15 min EARLIER than Evaluate Claim: time goes backwards inside the case. Approve->Close becomes 160-250 min (normal max 120), so the Approve timestamp is the wrong one."
+E4 Out-of-order (Approve before Evaluate),7,"Case_4, Case_15, Case_29, Case_32, Case_36, Case_82, Case_95","Timestamps increase, but they place Approve Claim before Evaluate Claim (61-115 min earlier). All gaps stay in the normal 30-120 min range, so the two timestamps (or labels) were swapped. A claim cannot be approved before it is evaluated."
+C1 Duplicate timestamps,0,,No two events of a case share the same timestamp.
+C2 Duration outliers,1,,"Only Case_5 (Approve->Close = 250 min), which is a side effect of its E3 error, not a new error."
+C3 Multi-day cases,0,,Every case happens within a single day.
+C4 Out-of-range dates,0,,No dates such as 1970 or 2099.

@@ -1,0 +1,26 @@
+pm4py.read_xes: 500 events, 5 without a timestamp
+==============================================================================
+LOG 'dirty': 100 cases, 495 events - variants (sorted by time)
+==============================================================================
+   83 : Register Claim -> Verify Documents -> Evaluate Claim -> Approve Claim -> Close Claim
+   12 : Register Claim -> Verify Documents -> Approve Claim -> Evaluate Claim -> Close Claim
+    3 : Register Claim -> Verify Documents -> Approve Claim -> Close Claim
+    1 : Register Claim -> Evaluate Claim -> Approve Claim -> Close Claim
+    1 : Verify Documents -> Evaluate Claim -> Approve Claim -> Close Claim
+==============================================================================
+LOG 'clean78': 78 cases, 390 events - variants (sorted by time)
+==============================================================================
+   78 : Register Claim -> Verify Documents -> Evaluate Claim -> Approve Claim -> Close Claim
+==============================================================================
+RESULTS (one row per log x miner)
+==============================================================================
+    log            miner  fitness  fitting_traces_%  precision  generalization  simplicity  sound  places  transitions  silent_transitions  arcs
+  dirty            alpha    0.937               0.0      1.000           0.899       0.765  False       8            5                   0    15
+  dirty        heuristic    0.977              84.0      1.000           0.750       0.778   True       8            6                   1    16
+  dirty        inductive    1.000             100.0      0.729           0.647       0.739   True       8            9                   4    20
+  dirty inductive_IMf0.2    0.992              95.0      1.000           0.899       1.000   True       7            5                   0    12
+clean78            alpha    1.000             100.0      1.000           0.887       1.000   True       6            5                   0    10
+clean78        heuristic    1.000             100.0      1.000           0.887       1.000   True       6            5                   0    10
+clean78        inductive    1.000             100.0      1.000           0.887       1.000   True       6            5                   0    10
+clean78 inductive_IMf0.2    1.000             100.0      1.000           0.887       1.000   True       6            5                   0    10
+Saved: q2_output/q2_metrics.csv and the PNG images in q2_output/

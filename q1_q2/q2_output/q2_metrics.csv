@@ -1,0 +1,9 @@
+log,miner,fitness,fitting_traces_%,precision,generalization,simplicity,sound,places,transitions,silent_transitions,arcs
+dirty,alpha,0.937,0.0,1.0,0.899,0.765,False,8,5,0,15
+dirty,heuristic,0.977,84.0,1.0,0.75,0.778,True,8,6,1,16
+dirty,inductive,1.0,100.0,0.729,0.647,0.739,True,8,9,4,20
+dirty,inductive_IMf0.2,0.992,95.0,1.0,0.899,1.0,True,7,5,0,12
+clean78,alpha,1.0,100.0,1.0,0.887,1.0,True,6,5,0,10
+clean78,heuristic,1.0,100.0,1.0,0.887,1.0,True,6,5,0,10
+clean78,inductive,1.0,100.0,1.0,0.887,1.0,True,6,5,0,10
+clean78,inductive_IMf0.2,1.0,100.0,1.0,0.887,1.0,True,6,5,0,10

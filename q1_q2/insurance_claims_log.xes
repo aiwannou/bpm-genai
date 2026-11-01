@@ -1,0 +1,3310 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<log xes.version="1.0" xes.features="nested-attributes" openxes.version="1.0RC7">
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.extension"/>
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.extension"/>
+	<extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.extension"/>
+	<global scope="trace">
+		<string key="concept:name" value="UNKNOWN"/>
+	</global>
+	<global scope="event">
+		<string key="concept:name" value="UNKNOWN"/>
+		<date key="time:timestamp" value="1970-01-01T00:00:00.000Z"/>
+		<string key="org:resource" value="UNKNOWN"/>
+		<int key="cost" value="0"/>
+	</global>
+	<trace>
+		<string key="concept:name" value="Case_1"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-01T12:53:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="264"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-01T13:51:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="351"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-01T14:56:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="438"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-01T15:46:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="224"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-01T16:51:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="160"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_2"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-02T10:43:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="244"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-02T11:25:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="483"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-02T12:39:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="185"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-02T13:14:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="324"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-02T13:59:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="90"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_3"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-03T12:07:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="491"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-03T13:23:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="148"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-03T15:23:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="73"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-03T17:17:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="445"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-03T18:24:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="487"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_4"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-04T09:42:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="192"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-04T11:10:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="133"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-04T12:27:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="157"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-04T14:22:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="409"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-04T16:19:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="361"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_5"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-05T11:51:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="423"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-05T12:52:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="286"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-05T14:10:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="377"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-05T13:55:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="162"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-05T18:05:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="481"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_6"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-06T09:59:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="462"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-06T11:09:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="187"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-06T11:47:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="340"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-06T11:32:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="385"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-06T14:30:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="379"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_7"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-07T10:48:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="121"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-07T11:49:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="325"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-07T12:52:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="269"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-07T14:36:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="235"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-07T15:34:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="310"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_8"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-08T10:41:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="490"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-08T11:25:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="371"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-08T12:15:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="355"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-08T12:53:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="245"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-08T14:39:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="320"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_9"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-09T11:40:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="398"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-09T12:24:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="434"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-09T13:28:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="107"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-09T14:35:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="130"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-09T16:03:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="419"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_10"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-10T12:03:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="440"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-10T12:55:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="104"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-10T14:45:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="480"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-10T16:36:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="361"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-10T17:31:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="241"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_11"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-11T10:39:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="50"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-11T12:25:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="300"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-11T12:57:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="235"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-11T14:06:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="79"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-11T15:06:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="90"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_12"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-12T10:32:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="439"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-12T12:10:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="115"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-12T14:04:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="331"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-12T14:55:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="320"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-12T16:42:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="158"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_13"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-13T12:58:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="415"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-13T14:07:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="393"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-13T16"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="274"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-13T17:36:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="111"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-13T18:37:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="82"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_14"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-14T10:45:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="167"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-14T12:30:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="53"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-14T13:09:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="167"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-14T13:47:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="490"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-14T14:59:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="313"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_15"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-15T10:05:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="159"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-15T11:44:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="420"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-15T13:27:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="292"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-15T14:28:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="463"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-15T15:50:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="98"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_16"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-16T10:54:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="231"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-16T12"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="289"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-16T12:54:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="81"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-16T14:15:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="459"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-16T14:58:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="148"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_17"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-17T12:27:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="266"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-17T13:20:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="286"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-17T14:21:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="276"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-17T16:01:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="75"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-17T17:54:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="478"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_18"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-18T09:41:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="135"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-18T11:03:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="296"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-18T12:00:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="80"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-18T12:51:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="51"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-18T14:10:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="451"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_19"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-19T11:06:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="406"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-19T12:47:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="129"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-19T13:41:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="161"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-19T14:18:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="426"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-19T15:57:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="432"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_20"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-20T10"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="349"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-20T12:08:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="486"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-20T13:45:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="79"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-20T15:20:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="485"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-20T16:13:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="354"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_21"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-21T12:00:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="111"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-21T13:42:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="346"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-21T15:28:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="367"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-21T16:08:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="386"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-21T17:52:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="317"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_22"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-22T11:03:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="392"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-22T12:13:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="185"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-22T13:33:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="393"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-22T15:25:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="284"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-22T16:35:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="54"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_23"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-23T11:49:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="101"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-23T12:28:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="159"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-23T14:02:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="117"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-23T15:16:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="500"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-23T16:17:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="195"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_24"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-24T10:26:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="410"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-24T11:34:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="463"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-24T13:27:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="54"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-24T15:22:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="203"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-24T17:16:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="499"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_25"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-25T10:03:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="104"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-25T11:43:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="189"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-25T12:49:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="157"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-25T14:02:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="401"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-25T15:53:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="308"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_26"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-26T11:02:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="97"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-26T12:53:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="474"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-26T13:58:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="51"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-26T15:10:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="376"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-26T16:13:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="429"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_27"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-27T11:40:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="337"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-27T12:11:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="88"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-27T14:09:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="329"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-27T14:43:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="348"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-27T16:23:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="270"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_28"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-28T09:35:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="236"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="157"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-28T12:07:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="391"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-28T12:50:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="449"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-28T14:31:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="367"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_29"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-29T09:50:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="261"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-29T10:23:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="427"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-29T11:35:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="460"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-29T13:30:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="186"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-29T14:20:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="245"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_30"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-09-30T10:30:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="152"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-09-30T11:58:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="206"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-09-30T12:57:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="62"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-09-30T14:51:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="254"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-09-30T16:03:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="492"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_31"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-01T10:05:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="378"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-01T11:40:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="397"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-01T13:18:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="64"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-01T13:03:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="141"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-01T15:46:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="69"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_32"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-02T10:46:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="226"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-02T11:56:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="360"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-02T13:31:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="247"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-02T15:14:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="180"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-02T15:49:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="50"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_33"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-03T12:38:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="236"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-03T14:03:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="390"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-03T15:15:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="210"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-03T17:09:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="418"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-03T18:17:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="208"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_34"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-04T12:22:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="256"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-04T14:21:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="333"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="265"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-04T17:02:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="396"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-04T17:54:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="341"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_35"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-05T11:40:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="205"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-05T12:46:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="270"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-05T14:30:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="385"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-05T15:41:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="276"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-05T17:07:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="311"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_36"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-06T10:51:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="195"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-06T12:26:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="221"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-06T13:07:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="394"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-06T14:16:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="462"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-06T15:11:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="62"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_37"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-07T10:01:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="362"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-07T10:40:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="262"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-07T12:30:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="149"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-07T14:29:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="303"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-07T15:50:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="125"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_38"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-08T12:58:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="434"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-08T13:41:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="162"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-08T14:33:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="287"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-08T15:09:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="177"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-08T15:54:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="118"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_39"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-09T11:55:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="336"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-09T13:41:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="436"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-09T15:07:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="467"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-09T16:41:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="475"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-09T18:21:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="131"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_40"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-10T12:30:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="182"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-10T13:31:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="442"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-10T15:07:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="370"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-10T16:07:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="275"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-10T16:46:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="170"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_41"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-11T11:12:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="326"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-11T11:52:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="127"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-11T12:51:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="405"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-11T13:40:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="82"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-11T15:03:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="219"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_42"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-12T12:29:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="81"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-12T13:25:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="249"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-12T15:09:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="488"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-12T16:52:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="294"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-12T17:22:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="202"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_43"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-13T11:23:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="432"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-13T13:02:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="162"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-13T14:34:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="189"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-13T15:59:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="64"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-13T17:18:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="392"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_44"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-14T12:21:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="480"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-14T13:50:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="368"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-14T15:28:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="251"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-14T17:13:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="389"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-14T17:46:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="379"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_45"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-15T10:47:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="143"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-15T11:23:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="244"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-15T12:34:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="282"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-15T13:45:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="439"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-15T15:03:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="435"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_46"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-16T11:02:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="290"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-16T11:34:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="76"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-16T12:48:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="382"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-16T13:26:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="436"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-16T13:59:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="152"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_47"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-17T10:49:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="172"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-17T11:35:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="392"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-17T12:19:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="161"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-17T13:48:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="442"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-17T15:05:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="360"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_48"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-18T11:44:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="209"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-18T12:27:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="63"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-18T13:36:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="396"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-18T14:54:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="416"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-18T15:49:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="353"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_49"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-19T12:50:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="102"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-19T14:49:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="485"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-19T16:46:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="462"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-19T17:31:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="450"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-19T18:06:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="322"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_50"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-20T11:54:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="85"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-20T13:28:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="56"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-20T14:51:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="104"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-20T16:16:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="375"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-20T17:44:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="272"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_51"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-21T10:36:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="365"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-21T12:14:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="288"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-21T13:39:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="187"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-21T14:50:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="475"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-21T15:31:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="280"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_52"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-22T10:29:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="362"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-22T12:24:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="222"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-22T12:57:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="485"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-22T14:08:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="299"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-22T15:05:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="458"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_53"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-23T11:13:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="500"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-23T12:59:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="334"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-23T13:30:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="147"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-23T14:10:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="418"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-23T15:32:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="334"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_54"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-24T10:58:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="380"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-24T12:30:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="455"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-24T13:02:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="200"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-24T14:00:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="404"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-24T15:01:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="389"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_55"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-25T12:17:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="333"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-25T13:54:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="267"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-25T15:34:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="230"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-25T17:33:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="188"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-25T18:42:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="168"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_56"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-26T09:54:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="111"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-26T11:32:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="148"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-26T12:29:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="191"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-26T14:14:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="355"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-26T15:20:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="476"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_57"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-27T10:07:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="234"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-27T10:59:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="57"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-27T12:59:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="114"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-27T14:04:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="77"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-27T15:44:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="407"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_58"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-28T10:51:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="102"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-28T11:22:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="195"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-28T12:52:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="275"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-28T14:05:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="76"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-28T15:07:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="108"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_59"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-29T10:21:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="87"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-29T12:04:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="127"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-29T12:53:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="205"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-29T13:33:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="110"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-29T15:14:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="360"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_60"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-30T12:49:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="447"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-30T14:25:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="280"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-30T15:51:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="490"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-30T15:36:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="206"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-30T19:18:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="80"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_61"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-10-31T11:42:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="370"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-10-31T12:39:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="388"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-10-31T13:19:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="172"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-10-31T14:11:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="88"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-10-31T15:01:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="259"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_62"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-01T11:58:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="290"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-01T13:05:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="168"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-01T14:11:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="409"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-01T15:39:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="401"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-01T16:38:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="453"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_63"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-02T12:45:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="267"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-02T13:29:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="165"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-02T15:21:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="186"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-02T16:09:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="80"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-02T17:00:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="354"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_64"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-03T12:42:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="274"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-03T13:27:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="402"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-03T14:35:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="189"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-03T16:09:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="302"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-03T17:35:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="356"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_65"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-04T10:25:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="359"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-04T11:27:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="96"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-04T12:26:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="350"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-04T12:58:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="345"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-04T13:33:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="290"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_66"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-05T12:53:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="192"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-05T13:46:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="273"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-05T15:37:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="96"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-05T17:07:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="259"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-05T18:19:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="393"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_67"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-06T09:50:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="260"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-06T11:48:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="197"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-06T13:42:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="466"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-06T15:22:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="282"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-06T16:03:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="179"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_68"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-07T10:44:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="492"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-07T12:19:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="386"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-07T13:58:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="261"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-07T14:34:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="315"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-07T15:50:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="437"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_69"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-08T11:50:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="439"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-08T12:26:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="186"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-08T14:06:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="197"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-08T15:32:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="112"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-08T16:05:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="459"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_70"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-09T11:00:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="209"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-09T12:40:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="332"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="165"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-09T14:46:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="110"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-09T16:38:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="305"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_71"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-10T13:00:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="262"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-10T14:31:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="174"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-10T15:59:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="124"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-10T17:18:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="356"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-10T18:53:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="492"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_72"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-11T10:05:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="224"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-11T11:39:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="470"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-11T12:09:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="421"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-11T13:17:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="346"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-11T15:11:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="493"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_73"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-12T10:27:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="297"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-12T11:41:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="332"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-12T13:20:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="283"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-12T14:31:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="407"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-12T15:31:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="246"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_74"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-13T10:22:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="212"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-13T11:52:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="247"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-13T13:46:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="303"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-13T14:20:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="307"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-13T16:05:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="495"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_75"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-14T10:26:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="319"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-14T11:54:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="419"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-14T12:42:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="495"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-14T14:35:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="88"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-14T16"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="223"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_76"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-15T12:20:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="486"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-15T13:32:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="244"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-15T14:42:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="496"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-15T16:21:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="366"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-15T16:59:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="373"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_77"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="432"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-16T12:47:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="100"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-16T14:38:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="277"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-16T15:29:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="64"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-16T16:04:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="457"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_78"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-17T11:15:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="270"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-17T12:03:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="321"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-17T13:25:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="399"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-17T14:18:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="139"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-17T14:58:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="495"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_79"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-18T11:49:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="304"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-18T13:33:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="168"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-18T15:02:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="285"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-18T16:04:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="461"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-18T17:33:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="396"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_80"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-19T11:50:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="276"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-19T13:04:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="203"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-19T14:55:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="403"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-19T15:57:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="482"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-19T17:05:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="246"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_81"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-20T10:43:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="245"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-20T12:26:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="344"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-20T13:33:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="61"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-20T13:18:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="190"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-20T15:58:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="492"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_82"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-21T11:36:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="431"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-21T13:09:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="447"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-21T14:08:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="460"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-21T15:23:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="375"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-21T16:17:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="178"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_83"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-22T12:54:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="371"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-22T13:36:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="208"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-22T15:02:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="346"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-22T16:18:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="96"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-22T17:25:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="432"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_84"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-23T10:52:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="117"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-23T12:31:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="321"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="475"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-23T14:56:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="472"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-23T16:27:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="432"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_85"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-24T10:29:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="122"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-24T11:27:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="483"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-24T13:08:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="96"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-24T14:28:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="185"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-24T16:06:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="282"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_86"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-25T11:56:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="349"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-25T13:14:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="105"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-25T15:10:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="291"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-25T15:43:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="337"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-25T16:54:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="163"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_87"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-26T11:38:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="408"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-26T12:46:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="109"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-26T13:33:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="69"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-26T14:41:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="109"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-26T15:23:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="325"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_88"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-27T10:19:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="239"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-27T12:14:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="264"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-27T13:59:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="262"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-27T15:52:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="476"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-27T17:24:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="258"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_89"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-28T10:34:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="161"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-28T12:00:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="170"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-28T13:16:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="401"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-28T14:33:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="380"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-28T15:48:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="253"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_90"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-29T10:54:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="484"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-29T12:22:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="389"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-29T13:19:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="60"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-29T13:55:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="174"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-29T14:41:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="155"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_91"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-11-30T10:40:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="350"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-11-30T11:37:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="218"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-11-30T12:25:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="51"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-11-30T13:30:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="116"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-11-30T15:09:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="458"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_92"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-12-01T09:44:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="117"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-12-01T10:15:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="454"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-12-01T11:15:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="215"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-12-01T11:47:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="185"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-12-01T12:23:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="429"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_93"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-12-02T11:37:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="431"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-12-02T12:15:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="279"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-12-02T13:31:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="353"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-12-02T14:14:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="307"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-12-02T15"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="72"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_94"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-12-03T11:28:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="81"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-12-03T12:59:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="268"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-12-03T14:56:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="301"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-12-03T16:22:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="91"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-12-03T17:33:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="125"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_95"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-12-04T09:46:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="369"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-12-04T11:37:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="330"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-12-04T12:48:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="355"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-12-04T14:25:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="282"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-12-04T15:59:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="270"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_96"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-12-05T10:59:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="486"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-12-05T12:52:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="419"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-12-05T13:49:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="281"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-12-05T14:48:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="223"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-12-05T16:16:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="262"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_97"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-12-06T11:42:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="268"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-12-06T12:52:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="241"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-12-06T13:41:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="84"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-12-06T14:22:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="97"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-12-06T15:47:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="431"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_98"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-12-07T12:17:00"/>
+			<string key="org:resource" value="User_B"/>
+			<int key="cost" value="334"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-12-07T12:54:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="337"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-12-07T14:35:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="393"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-12-07T15:20:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="231"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-12-07T17:15:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="494"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_99"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-12-08T11:36:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="357"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-12-08T12:45:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="103"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-12-08T14:28:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="158"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-12-08T15:17:00"/>
+			<string key="org:resource" value="User_D"/>
+			<int key="cost" value="164"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-12-08T16:00:00"/>
+			<string key="org:resource" value="User_C"/>
+			<int key="cost" value="482"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case_100"/>
+		<event>
+			<string key="concept:name" value="Register Claim"/>
+			<date key="time:timestamp" value="2026-12-09T12:17:00"/>
+			<string key="org:resource" value="User_A"/>
+			<int key="cost" value="440"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Verify Documents"/>
+			<date key="time:timestamp" value="2026-12-09T13:22:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="165"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Evaluate Claim"/>
+			<date key="time:timestamp" value="2026-12-09T14:46:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="442"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Approve Claim"/>
+			<date key="time:timestamp" value="2026-12-09T16:35:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="395"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Close Claim"/>
+			<date key="time:timestamp" value="2026-12-09T18:27:00"/>
+			<string key="org:resource" value="User_E"/>
+			<int key="cost" value="63"/>
+		</event>
+	</trace>
+</log>
