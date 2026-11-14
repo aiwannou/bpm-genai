@@ -9,9 +9,9 @@ Insurance-claims event log (100 cases, 500 events) analysed with process mining
 | Q2 Petri nets (Alpha / Heuristic / Inductive) | Done | `q1_q2/q2_petri_nets.py` |
 | Q3 LLM assistant (questions → table + chart) | Done | `app/` (tab "Ask the log") |
 | Q4 Trace summary with enhancement | Done | `app/` (tab "Trace summary") |
-| Q5 Timestamp correction, 2 LLMs × 2 methods | **To do** | `app/` (tab "Fix timestamps" is a placeholder) |
-| Q6 Evaluation tables (2×2 per metric) | **To do** | ground truth: `q1_q2/q1_error_events.csv` |
-| Q7 Time and token cost | **To do** | the app already logs seconds + tokens per call (tab "Usage & cost") |
+| Q5 Timestamp correction, 2 LLMs × 2 methods | **Done** | `app/q5_fix.py` + `app/q5_tab.py` (tab "Fix timestamps") |
+| Q6 Evaluation tables (2×2 per metric) | **In the app** | bottom of the "Fix timestamps" tab, or `python3 run_q5_all.py` |
+| Q7 Time and token cost | **In the app** | bottom of the "Fix timestamps" tab + tab "Usage & cost" (CSV) |
 | Deploy to Streamlit Cloud + link in report | **To do** (after Q5) | |
 
 ## Folder structure
@@ -81,7 +81,8 @@ Get a free Groq key (no credit card) at console.groq.com → API Keys.
   Approve timestamp is the wrong one (moved 15 min before Evaluate); in E4 the
   Evaluate/Approve timestamps are swapped.
 - **Two LLMs on one free key:** Groq hosts models from different companies,
-  e.g. `openai/gpt-oss-120b` (OpenAI) and `llama-3.3-70b-versatile` (Meta).
+  Q5 uses `openai/gpt-oss-120b` (OpenAI) and `qwen/qwen3.8-27b` (Alibaba).
+  (`llama-3.3-70b-versatile` was planned, but Groq retired it from the free tier on 16 Aug 2026.)
   `llm.py` → `GroqLLM(api_key, model).generate(system, prompt, json_mode)` returns
   text + seconds + input/output tokens.
 - **Data tables:** `data.build_tables()` returns `events` and `cases` with the

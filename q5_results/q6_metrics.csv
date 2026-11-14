@@ -1,0 +1,9 @@
+stage,method,model,TP,FP,FN,TN,Accuracy,Precision,Recall,F1,Correct repair rate,Valid cases after repair,Hallucination rate,Invented events,Invalid values
+final (after self-check),A,GPT-OSS 120B (OpenAI),29,0,0,471,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0,0
+final (after self-check),B,GPT-OSS 120B (OpenAI),29,0,0,471,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0,0
+final (after self-check),A,Qwen 3.8 27B (Alibaba),29,0,0,471,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0,0
+final (after self-check),B,Qwen 3.8 27B (Alibaba),29,0,0,471,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0,0
+first pass,A,GPT-OSS 120B (OpenAI),27,1,2,470,0.994,0.9642857142857143,0.9310344827586207,0.9473684210526316,0.896551724137931,1.0,0.03571428571428571,0,0
+first pass,B,GPT-OSS 120B (OpenAI),28,0,1,471,0.998,1.0,0.9655172413793104,0.9824561403508771,0.9310344827586207,1.0,0.0,0,0
+first pass,A,Qwen 3.8 27B (Alibaba),29,1,0,470,0.998,0.9666666666666667,1.0,0.983050847457627,0.9310344827586207,1.0,0.03333333333333333,0,0
+first pass,B,Qwen 3.8 27B (Alibaba),25,0,4,471,0.992,1.0,0.8620689655172413,0.9259259259259259,0.7241379310344828,0.9090909090909091,0.0,0,0

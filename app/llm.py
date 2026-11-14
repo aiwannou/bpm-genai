@@ -37,7 +37,7 @@ class GroqLLM:
     key_name = "GROQ_API_KEY"
     BASE_URL = "https://api.groq.com/openai/v1"
     SKIP = ("whisper", "tts", "guard", "playai", "orpheus", "compound", "allam", "distil")
-    PREFERRED = ("llama-3.3-70b-versatile", "openai/gpt-oss-120b", "qwen/qwen3-32b")
+    PREFERRED = ("openai/gpt-oss-120b", "qwen/qwen3.8-27b", "llama-3.3-70b-versatile")
 
     def __init__(self, api_key, model):
         from openai import OpenAI
@@ -68,6 +68,10 @@ class GroqLLM:
         kwargs = {}
         if json_mode:
             kwargs["response_format"] = {"type": "json_object"}
+        if "qwen" in self.model.lower():
+            # Qwen thinks before answering; "hidden" returns only the answer and is
+            # the setting Groq requires with JSON mode (raw <think> text gives error 400)
+            kwargs["extra_body"] = {"reasoning_format": "hidden"}
         t0 = time.perf_counter()
         resp = self.client.chat.completions.create(
             model=self.model, temperature=0,

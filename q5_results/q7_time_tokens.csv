@@ -1,0 +1,11 @@
+method,model,stage,seconds,input_tokens,output_tokens
+A,GPT-OSS 120B (OpenAI),first pass,188.06,27600,18777
+A,GPT-OSS 120B (OpenAI),self-check 1,47.81,3560,6144
+A,GPT-OSS 120B (OpenAI),self-check 1 (single case),48.12,3362,2935
+A,Qwen 3.8 27B (Alibaba),first pass,20.69,32612,5321
+A,Qwen 3.8 27B (Alibaba),self-check 1,24.23,2316,371
+A,Qwen 3.8 27B (Alibaba),self-check 2,0.65,1458,192
+B,GPT-OSS 120B (OpenAI),first pass,251.33,38597,23704
+B,GPT-OSS 120B (OpenAI),self-check 1,15.69,1471,2456
+B,Qwen 3.8 27B (Alibaba),first pass,155.77,42968,7866
+B,Qwen 3.8 27B (Alibaba),self-check (all rounds),2.67,4505,1035

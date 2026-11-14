@@ -17,6 +17,7 @@ import streamlit as st
 from assistant import ask_log, make_chart, summarize_trace, trace_facts
 from data import build_tables
 from llm import GroqLLM, find_working_model, friendly_error
+from q5_tab import render_q5_tab
 
 st.set_page_config(page_title="Claims Process Assistant", page_icon="📋", layout="wide")
 
@@ -27,6 +28,12 @@ st.set_page_config(page_title="Claims Process Assistant", page_icon="📋", layo
 @st.cache_data
 def load_tables():
     return build_tables()
+
+
+@st.cache_data
+def load_raw_log():
+    """The log with timestamps kept as raw text (needed by Q5)."""
+    return pd.read_csv("insurance_claims_log.csv", dtype=str)
 
 
 @st.cache_data(show_spinner=False, ttl=3600)
@@ -223,12 +230,21 @@ with tab4:
             st.json(facts)
 
 # ----------------------------------------------------------------------
-# Q5 - placeholder
+# Q5 - timestamp correction (2 LLMs x 2 methods) + Q6/Q7 tables
 # ----------------------------------------------------------------------
+def log_q5_calls(calls):
+    for _, c in calls.iterrows():
+        st.session_state.usage.append({
+            "tab": f"Q5 method {c['method']}", "step": f"batch {c['batch']}",
+            "model": c["model_id"], "seconds": c["seconds"],
+            "input_tokens": c["input_tokens"], "output_tokens": c["output_tokens"],
+        })
+
+
 with tab5:
-    st.subheader("Fix the timestamps with two LLMs")
-    st.info("Coming next: statistical and machine-learning correction of the timestamp "
-            "errors with two LLMs, evaluated against the Question 1 ground truth.")
+    render_q5_tab(load_raw_log(), (lambda m: GroqLLM(api_key, m)) if api_key else None,
+                  models=available_models(api_key) if llm is not None else None,
+                  on_calls=log_q5_calls)
 
 # ----------------------------------------------------------------------
 # Data and usage tabs
