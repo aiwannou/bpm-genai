@@ -10,8 +10,8 @@ Insurance-claims event log (100 cases, 500 events) analysed with process mining
 | Q3 LLM assistant (questions → table + chart) | Done | `app/` (tab "Ask the log") |
 | Q4 Trace summary with enhancement | Done | `app/` (tab "Trace summary") |
 | Q5 Timestamp correction, 2 LLMs × 2 methods | **Done** | `app/q5_fix.py` + `app/q5_tab.py` (tab "Fix timestamps") |
-| Q6 Evaluation tables (2×2 per metric) | **In the app** | bottom of the "Fix timestamps" tab, or `python3 run_q5_all.py` |
-| Q7 Time and token cost | **In the app** | bottom of the "Fix timestamps" tab + tab "Usage & cost" (CSV) |
+| Q6 Evaluation tables (2×2 per metric) | **Done** | `q6_results/` (report section 7) |
+| Q7 Time and token cost | **Done** | `q7_results/` (report section 8) |
 | Deploy to Streamlit Cloud + link in report | **To do** (after Q5) | |
 
 ## Folder structure
@@ -19,7 +19,7 @@ Insurance-claims event log (100 cases, 500 events) analysed with process mining
 ```
 bpm-genai/
 ├── README.md
-├── report/                     report (Q1–Q4 written, Q5–Q7 empty sections)
+├── report/                     report (Q1–Q7 written)
 ├── q1_q2/                      Questions 1 and 2 (run in the terminal)
 │   ├── q1_timestamp_errors.py  finds the timestamp errors (no LLM)
 │   ├── q2_petri_nets.py        discovers + evaluates the Petri nets
@@ -28,12 +28,16 @@ bpm-genai/
 │   ├── q1_summary.csv, q1_output.txt, q2_output.txt   saved results
 │   ├── q2_output/              Petri net images + q2_metrics.csv
 │   └── q2_analysis_notes.md    notes used for the report
-└── app/                        Questions 3, 4 (and 5) – Streamlit web app
+├── q5_results/                 Question 5: corrected logs of the 4 runs + run guide
+├── q6_results/                 Question 6: evaluation metrics (2×2 tables) + figure
+├── q7_results/                 Question 7: time and tokens per run + figure
+└── app/                        Questions 3, 4 and 5 – Streamlit web app
     ├── app.py                  GUI (tabs)
     ├── assistant.py            Q3 + Q4 logic (prompts, safe code execution)
     ├── data.py                 builds the events/cases tables + schema for the LLM
     ├── llm.py                  Groq API wrapper (measures seconds + tokens)
     ├── q1_timestamp_errors.py  same file as in q1_q2 (reused for error flags)
+    ├── q5_fix.py, q5_tab.py    Q5 logic + tab "Fix timestamps"
     └── .streamlit/secrets.toml.example
 ```
 
