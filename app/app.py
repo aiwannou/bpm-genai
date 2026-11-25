@@ -15,7 +15,7 @@ import plotly.express as px
 import streamlit as st
 
 from assistant import ask_log, make_chart, summarize_trace, trace_facts
-from data import build_tables
+from data import LOG_FILE, build_tables
 from llm import GroqLLM, find_working_model, friendly_error
 from q5_tab import render_q5_tab
 
@@ -33,7 +33,7 @@ def load_tables():
 @st.cache_data
 def load_raw_log():
     """The log with timestamps kept as raw text (needed by Q5)."""
-    return pd.read_csv("insurance_claims_log.csv", dtype=str)
+    return pd.read_csv(LOG_FILE, dtype=str)
 
 
 @st.cache_data(show_spinner=False, ttl=3600)
@@ -76,7 +76,8 @@ with st.sidebar:
     llm = None
     if not api_key:
         st.error("No API key found. Add the line GROQ_API_KEY = \"gsk_...\" to the file "
-                 ".streamlit/secrets.toml and restart the app.")
+                 ".streamlit/secrets.toml and restart the app "
+                 "(on Streamlit Community Cloud: app settings → Secrets).")
     else:
         try:
             models = available_models(api_key)

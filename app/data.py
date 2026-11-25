@@ -12,6 +12,8 @@ functions (imported from q1_timestamp_errors.py), so time-based answers can
 exclude unreliable values instead of silently using them.
 """
 
+from pathlib import Path
+
 import pandas as pd
 
 from q1_timestamp_errors import (
@@ -19,7 +21,9 @@ from q1_timestamp_errors import (
     find_negative_durations, find_out_of_order, variants_in_file_order,
 )
 
-LOG_FILE = "insurance_claims_log.csv"
+# Full path next to this file, so the app also works when it is started from another
+# folder (Streamlit Community Cloud starts it from the root of the repository).
+LOG_FILE = str(Path(__file__).resolve().parent / "insurance_claims_log.csv")
 
 
 def build_tables(path=LOG_FILE):
